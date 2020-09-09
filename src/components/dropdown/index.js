@@ -355,7 +355,7 @@ export default class Dropdown extends PureComponent {
 
     title = null == title || "string" === typeof title ? title : String(title);
 
-    this.inputRef.setValue(value);
+    this.inputRef.setValue(title);
 
     if ("function" === typeof onChangeText) {
       onChangeText(value, index, data);
